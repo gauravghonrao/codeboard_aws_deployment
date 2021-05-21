@@ -7,14 +7,14 @@ pipeline{
 		stage('Compile Stage GH'){
 			steps{
 				
-					bat 'maven clean compile'
+					bat 'mvn clean compile'
 				
 			}
 		}
 		stage('Deploy Stage GH'){
 			steps{
 				
-					bat 'maven deploy'
+					bat 'mvn deploy'
 				
 			}
 		}
